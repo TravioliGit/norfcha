@@ -105,13 +105,15 @@ function renderQuestion(index) {
             answerEl.addEventListener('click', () => {
                 if (item.correct.includes(parseInt(answerEl.id))) {
                     score++;
-                    console.log(score);
+                    console.log(`Correct! Score: ${score}`);
                 }
                 renderQuestion(currentQuestionIndex + 1);
+                console.log(`Correct answer(s): ${item.answers[item.correct]}\n\n${item.justification}`)
             });
         });
+
     } else {
-        if (score = 11) {
+        if (score === 11) {
             quizContainer.innerHTML = `
             <h2>Captcha Complete</h2>
             <p>Your score was: ${score}</p>
@@ -121,7 +123,7 @@ function renderQuestion(index) {
             quizContainer.innerHTML = `
             <h2>Captcha Complete</h2>
             <p>Your score was: ${score}</p>
-            <p>YOU ARE NOT NORTHERN</p>
+            <p>YOU ARE NOT NORTHERN, FACK OAFF</p>
             `;
         }
     }
