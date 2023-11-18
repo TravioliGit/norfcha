@@ -1,6 +1,6 @@
 const quizQuestions = [
     {
-        question: "You've just come home. You're 9 Stellas deep and Newcastle lost the footy. What scran will take the pain away?",
+        question: "You've just come home. You're 9 Stellas deep and Newcastle lost the footy. What scran will take the pain away? (Open the console for answer justifications)",
         answers: ["Curry Sauce + Chips", "Parmo", "Cucumber and Tuna Sandwich", "More Stellas"],
         correct: [1],
         image: "norf/fc.jpg",
